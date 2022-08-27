@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { render } from '@testing-library/react';
 class ErrorBoundary extends Component{
     constructor(props){
         super(props);
@@ -9,7 +8,7 @@ class ErrorBoundary extends Component{
     }
 
     componentDidCatch(error, info){
-    this.setState({hasError: true});
+        this.setState({hasError: true});
     }
 
     render(){
